@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+/** ---------------- SETUP ---------------- **/
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0F0F0F;
+    color: #FFFFFF;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 25px;
+    background-color: #156c35;
+    color: #FFFFFF;
+    border-radius: 10px;
+    font-weight: 600;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow .3s ease-in-out;
+    box-shadow: 0px 5px 1px #FFFFFF;
+}
+
+button:hover {
+    box-shadow: 0px 0px 1px #FFFFFF;
+}
+
+button:last-child {
+    margin-top: 30px;
+    background: #000;
+    box-shadow: none;
+}
+/** ---------------- SETUP ---------------- **/
+
+
+/** ---------------- TIMER ---------------- **/
+.timer {
+    /* padding: 20px; */
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    transition: transform .3s ease-in-out;
+    transform: scale(1);
+}
+
+.timer .display {
+    width: 100%;
+    padding: 10px;
+    background: #000000;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px #FFFFFF;
+    transition: background .3s ease-in-out;
+    transform: scale(1.1);
+}
+
+.timer .display #time {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.timer .display #passed-pomodoros {
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.timer .working-status {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+}
+/** ---------------- TIMER ---------------- **/
